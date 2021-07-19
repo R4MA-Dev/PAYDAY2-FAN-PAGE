@@ -172,7 +172,7 @@
 /*Fuentes de letras que descargue de internet*/
 
 body{
-    margin-top:-17px;
+    margin-top:-25px;
     background-color:var(--white-color);
     color:var(--black-color);
     overflow-x:hidden;
@@ -256,7 +256,7 @@ h1 span{
 /*Diseño del 2 para que se parezca al de PAYDAY2*/
 
 nav{
-    margin-top:-16px;
+    margin-top:-25px;
     height:60px;
     background-color:rgb(57, 129, 254);
     text-align:center;
