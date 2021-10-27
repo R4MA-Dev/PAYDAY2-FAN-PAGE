@@ -1,640 +1,767 @@
-:root{
-    --black-color:black;
-    --white-color:white;
+:root {
+    --black-color: rgb(39, 38, 38);
+    --white-color: white;
 }
+
 /*Cree variables que se cambiaran con el script "dark-mode.js"*/
 
-@media (max-width:1024px){
-    header h1{
-        font-size:100%;
+@media (max-width:1024px) {
+    header h1 {
+        font-size: 100%;
     }
-    nav ul li{
-        margin-top:17px;
-        font-size:50%;
+
+    nav ul li {
+        margin-top: 17px;
+        font-size: 50%;
     }
-    #logopd2{
-        width:50%;
-        height:50%;
+
+    #logopd2 {
+        width: 50%;
+        height: 50%;
     }
-    section .imagen{
-        width:500px;
-        height:300px;
-        margin-left:auto !important;
-        margin-right:auto !important;
+
+    section .imagen {
+        width: 500px;
+        height: 300px;
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
-    section .ocultacion{
-        width:400px;
-        height:100px;
+
+    section .ocultacion {
+        width: 400px;
+        height: 100px;
     }
-    section .luchador{
-        width:250px;
-        height:350px;
+
+    section .luchador {
+        width: 250px;
+        height: 350px;
     }
-    section h2{
-        font-size:100%;
+
+    section h2 {
+        font-size: 100%;
     }
-    section h3{
-        font-size:100%;
+
+    section h3 {
+        font-size: 100%;
     }
-    section p{
-        line-height:130%;
-        font-size:100%;
+
+    section p {
+        line-height: 130%;
+        font-size: 100%;
     }
-    section ul li{
-        line-height:160% !important;
-        font-size:100% !important;
+
+    section ul li {
+        line-height: 160% !important;
+        font-size: 100% !important;
     }
-    #menu-juego ul li{
-        line-height:200%;
-        font-size:100%;
+
+    #menu-juego ul li {
+        line-height: 200%;
+        font-size: 100%;
     }
-    section #time{
-        font-size:170%;
+
+    section #time {
+        font-size: 170%;
     }
-    .container-boton{
-        display:none;
+
+    .container-boton {
+        display: none;
     }
-    section .skull{
-        width:80px;
-        height:100px;
+
+    section .skull {
+        width: 80px;
+        height: 100px;
     }
-    section .paquetes{
-        width:300px;
-        height:125px;
+
+    section .paquetes {
+        width: 300px;
+        height: 125px;
     }
-    section .overrides{
-        width:400px;
-        height:200px;
+
+    section .overrides {
+        width: 400px;
+        height: 200px;
     }
-    #submenu ul li a{
-        font-size:100% !important;
+
+    #submenu ul li a {
+        font-size: 100% !important;
     }
-    section .duales{
+
+    section .duales {
         width: 400px;
         height: 250px;
     }
-}
-@media (max-width:425px){
-    header h1{
-        transition:none !important;
-        font-size:65%;
-    }
-    nav ul li{
-        transition:none !important;
-        margin-right: 0 !important;
-        font-size:20% !important;
-        padding-left:0px !important;
-        padding-right:0px !important;
-    }
-    nav ul{
-        padding-left:0px !important;
-    }
-    section p{
-        line-height:130%;
-        font-size:80% !important;
-    }
-    section ul li{
-        line-height:160% !important;
-        font-size:80% !important;
-    }
-    section .imagen{
-        width:350px;
-        height:200px;
-        margin-left:auto;
-        margin-right:auto;
-    }
-    section .ocultacion{
-        width:350px;
-        height:100px;
-    }
-    section .luchador{
-        width:150px !important;
-        height:220px !important;
-    }
-    section #sigilo, section #asalto{
-        margin-right:auto;
-        margin-left:auto;
-        margin-bottom:10px;
-    }
-    section #personajes, section #mascaras{
-        margin-right:auto;
-        margin-left:auto;
-        margin-bottom:10px;
-    }
-    footer{
-        font-size:75%;
-    }
-    section .skull{
-        width:45px !important;
-        height:55px !important;
-    }
-    header #dark-button{
-        font-size:9px;
-        width:50px;
-        height:40px;
-        margin-left:1% !important;
-    }
-    #submenu ul li a{
-        font-size:90% !important;
-    }
-    #submenu ul li{
-        padding:5px !important;
-    }
-}
-@media(max-width:320px){
-    section .imagen{
-        width:300px;
-        height:175px;
-        margin-left:auto;
-        margin-right:auto;
-    }
-    section p{
-        line-height:130%;
-        font-size:75% !important;
+
+    main {
+        width: 100% !important;
     }
 }
 
-@font-face{
-    font-family:Headliner;
-    src:url("Headliner.ttf");}
-@font-face{
-    font-family:Blacklisted;
-    src:url("Blacklisted.ttf");}
-@font-face{
-    font-family:Gobold;
-    src:url("Gobold\ Regular\ Italic.otf");}
-@font-face{
-    font-family:Roboto;
-    src:url("Roboto-BoldItalic.ttf");}
+@media (max-width:425px) {
+    header h1 {
+        transition: none !important;
+        font-size: 65%;
+    }
+
+    nav ul li a{
+        padding: 19px !important;
+    }
+
+    nav ul li {
+        transition: none !important;
+        margin-right: -15px !important;
+        font-size: 45% !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
+    nav ul {
+        padding-left: 0px !important;
+    }
+
+    section p {
+        line-height: 130%;
+        font-size: 80% !important;
+    }
+
+    section ul li {
+        line-height: 160% !important;
+        font-size: 80% !important;
+    }
+
+    section .imagen {
+        width: 350px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section .ocultacion {
+        width: 350px;
+        height: 100px;
+    }
+
+    section .luchador {
+        width: 150px !important;
+        height: 220px !important;
+    }
+
+    section #sigilo,
+    section #asalto {
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 10px;
+    }
+
+    section #personajes,
+    section #mascaras {
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        font-size: 75%;
+    }
+
+    section .skull {
+        width: 45px !important;
+        height: 55px !important;
+    }
+
+    header #dark-button {
+        font-size: 9px;
+        width: 50px;
+        height: 40px;
+        margin-left: 1% !important;
+    }
+
+    #submenu ul li a {
+        font-size: 90% !important;
+    }
+
+    #submenu ul li {
+        padding: 5px !important;
+    }
+}
+
+@media(max-width:320px) {
+    header h1 {
+        transition: none !important;
+        font-size: 50%;
+    }
+
+    nav ul li {
+        font-size: 20% !important;
+    }
+
+    section .imagen {
+        width: 300px;
+        height: 175px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section p {
+        line-height: 130%;
+        font-size: 75% !important;
+    }
+}
+
 @font-face {
-    font-family:Lato;
-    src: url("Lato-Thin.ttf");}
+    font-family: Headliner;
+    src: url("Headliner.ttf");
+}
+
+@font-face {
+    font-family: Blacklisted;
+    src: url("Blacklisted.ttf");
+}
+
+@font-face {
+    font-family: Gobold;
+    src: url("Gobold\ Regular\ Italic.otf");
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("Roboto-BoldItalic.ttf");
+}
+
+@font-face {
+    font-family: Lato;
+    src: url("Lato-Thin.ttf");
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url("OpenSansCondensed-Light.ttf");
+}
+
 /*Fuentes de letras que descargue de internet*/
 
-body{
-    margin-top:-25px;
-    background-color:var(--white-color);
-    color:var(--black-color);
-    overflow-x:hidden;
+body {
+    padding: 0;
+    margin: 0;
+    margin-top: -25px;
+    overflow-x: hidden;
     scroll-behavior: smooth;
+    background: url("wallpaperfondo.jpg") no-repeat top center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-.indexh{
-    background-size:cover;
-    background-image:url("fondo.jpg");
-    background-repeat: no-repeat;
-    background-position:bottom;
+main {
+    background-color: var(--white-color);
+    color: var(--black-color);
+    width: 65%;
+    padding-bottom: 100px;
+    margin: auto;
 }
 
-.dificultadesh{
-    background-size:cover;
-    background-image:url("fondo2.jpg");
+.indexh {
+    background-size: cover;
+    background-image: url("fondo.jpg");
     background-repeat: no-repeat;
-    background-position:top top;
+    background-position: bottom;
 }
 
-.dlcymodsh{
-    background-size:cover;
-    background-image:url("fondo3.jpg");
+.dificultadesh {
+    background-size: cover;
+    background-image: url("fondo2.jpg");
     background-repeat: no-repeat;
-    background-position:top top;
+    background-position: top top;
 }
 
-.armash{
-    background-size:cover;
-    background-image:url("fondo4.jpg");
+.dlcymodsh {
+    background-size: cover;
+    background-image: url("fondo3.jpg");
     background-repeat: no-repeat;
-    background-position:top top;
+    background-position: top top;
 }
+
+.armash {
+    background-size: cover;
+    background-image: url("fondo4.jpg");
+    background-repeat: no-repeat;
+    background-position: top top;
+}
+
 /*Imagenes de fondo para el header de las 3 paginas*/
 
-h1{
-    padding:18%;
-    color:white;
-    transition:0.7s;
-    text-align:center;
+h1 {
+    padding: 18%;
+    color: white;
+    transition: 0.7s;
+    text-align: center;
 }
+
 /*Configuracion para todos los <h1>*/
 
-img{
-    max-width:100%;
-    max-height:100%;
+img {
+    max-width: 100%;
+    max-height: 100%;
 }
+
 /*Para que las imagenes se vean bien en cualquier pantalla/resolucion*/
 
-.imagen{
-    border-radius:10px 10px 10px 10px;
-    transition:0.3s;
+.imagen {
+    border-radius: 10px;
 }
+
 /*Border radius y transiciones para todas las imagenes con la clase "imagen"*/
 
-.imagen:hover{
-    transform:scale(1.05);
+h1 span {
+    border-radius: 10px 10px 10px 10px;
+    text-shadow: 4px 2px 2px black;
+    background-color: rgba(0, 0, 0, 0.338);
+    font-size: 350%;
+    color: white;
+    font-weight: 100;
+    font-family: Headliner;
+    padding: 10px;
 }
-/*Aumentar la escala de la imagen cuando pase el mouse por encima*/
 
-h1 span{
-    border-radius:10px 10px 10px 10px;
-    text-shadow:4px 2px 2px black;
-    background-color:rgba(0, 0, 0, 0.338);
-    font-size:350%;
-    color:white;
-    font-weight:100;
-    font-family:Headliner;
-    padding:10px;
-}
 /*Diseño del texto del <h1>*/
 
-.dos{
-    box-shadow:none;
-    border:none;
-    background-color:rgba(0, 0, 0, 0); ;
-    font-size:100%;
-    transition:1s;
-    color:rgb(57, 129, 254);
+.dos {
+    box-shadow: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    ;
+    font-size: 100%;
+    transition: 1s;
+    color: rgb(57, 129, 254);
 }
+
 /*Diseño del 2 para que se parezca al de PAYDAY2*/
 
-nav{
-    margin-top:-25px;
-    height:60px;
-    background-color:rgb(57, 129, 254);
-    text-align:center;
+nav {
+    margin-top: -25px;
+    height: 60px;
+    background-color: rgb(57, 129, 254);
+    text-align: center;
 }
-nav ul{
-    list-style:none;
+
+nav ul {
+    list-style: none;
+    margin-left: -15px;
 }
-nav ul li{
-    display:inline-flex;
+
+nav ul li {
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding-left:20px;
-    padding-right:20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
-nav ul li a{
-    color:white;
-    font-weight:100;
-    text-decoration:none;
-    font-size:200%;
-    padding:21px;
-    font-family:Blacklisted;
+
+nav ul li a {
+    color: white;
+    font-weight: 100;
+    text-decoration: none;
+    font-size: 130%;
+    padding: 21px;
+    font-family: Blacklisted;
 }
-a:hover{
-    text-shadow:1px 1px 0px white;
-    color:black;
+
+a:hover {
+    text-shadow: 1px 1px 0px white;
+    color: black;
+    transition: transform 0.3s;
+    transform: scale(1.15);
 }
+
 /*Diseño del nav (menu)*/
 
-#comosejuega{
-    color:var(--black-color);
-    background-color:var(--white-color);
-    border-radius:10px 10px 0px 0px;
+#comosejuega {
+    color: var(--black-color);
+    background-color: var(--white-color);
+    border-radius: 10px 10px 0px 0px;
 }
-#dificultades{
-    color:var(--black-color);
-    background-color:var(--white-color);
-    border-radius:10px 10px 0px 0px;
+
+#dificultades {
+    color: var(--black-color);
+    background-color: var(--white-color);
+    border-radius: 10px 10px 0px 0px;
 }
-#dlcymods{
-    color:var(--black-color);
-    background-color:var(--white-color);
-    border-radius:10px 10px 0px 0px;
+
+#dlcymods {
+    color: var(--black-color);
+    background-color: var(--white-color);
+    border-radius: 10px 10px 0px 0px;
 }
-#armas{
-    color:var(--black-color);
-    background-color:var(--white-color);
-    border-radius:10px 10px 0px 0px;
+
+#armas {
+    color: var(--black-color);
+    background-color: var(--white-color);
+    border-radius: 10px 10px 0px 0px;
 }
+
 /*Para saber en que pagina se ubica el usuario*/
 
-.introduccion{
-    width:100%;
-    text-align:center;
+.introduccion {
+    width: 100%;
+    text-align: center;
 }
+
 /*Centrar todo en el apartado "¿Qué es payday2?"*/
 
-h2 span{
-    box-shadow:3px 3px 3px black;
-    border:1px solid black;
-    border-radius:10px 10px 10px 10px;
-    padding:5px;
-    color:var(--white-color);
-    background-color:var(--black-color);
-    font-weight:bolder;
-    font-size:150%;
-    font-family:Gobold;
+h2 span {
+    border: none;
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: var(--white-color);
+    background-color: var(--black-color);
+    font-weight: bolder;
+    font-size: 150%;
+    font-family: Gobold;
 }
+
 /*Diseño de los textos del <h2>*/
 
-h3 span{
-    box-shadow:3px 3px 3px black;
-    border:1px solid rgba(57, 129, 254, 0.728);
-    border-radius:10px 10px 10px 10px;
-    padding:5px;
-    background-color:rgba(57, 129, 254, 0.728);
-    font-weight:bolder;
-    font-size:150%;
-    font-family:Gobold;
+h3 span {
+    border: none;
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgba(57, 129, 254, 0.728);
+    font-weight: bolder;
+    font-size: 150%;
+    font-family: Gobold;
 }
+
 /*Diseño de los textos del <h3>*/
 
-p{
-    font-weight:900;
-    font-size:150%;
-    font-family:Roboto;
+p {
+    font-weight: 900;
+    font-size: 130%;
+    font-family: OpenSans;
 }
+
 /*Diseño de los parrafos*/
 
-p span{
-    color:rgb(57, 129, 254);
+p span {
+    color: rgb(57, 129, 254);
 }
+
 /*Diseño de los parrafos encerrados por la etiqueta <span>*/
 
-#sigilo{
-    margin-right:10px;
+#menu-juego {
+    text-align: center;
 }
-#asalto{
-    margin-left:10px;
-}
-/*Margen entre las 2 imagenes para que tengan distancia entre ellas*/
 
-#menu-juego{
-    text-align:center;
-}
 /*Centrar todo el apartado "Menu Principal"*/
 
-#crime-net{
-    text-align:center;
+#crime-net {
+    text-align: center;
 }
+
 /*Centrar todo el apartado "Crime.Net"*/
 
-#en-juego{
-    text-align:center;
+#en-juego {
+    text-align: center;
 }
+
 /*Centrar todo el apartado "En el juego"*/
 
-#tips-extra{
-    text-align:center;
+#tips-extra {
+    text-align: center;
 }
+
 /*Centrar todo el apartado "Tips Extra"*/
 
-.no-afecta{
-    color:rgb(214, 18, 18);
+.no-afecta {
+    color: rgb(214, 18, 18);
 }
+
 /*Texto en rojo para avisar que no afecta al juego*/
 
-#personajes{
-    margin-right:10px;
+.to-container {
+    position: fixed;
+    bottom: 1px;
+    right: 1px;
+    width: 56px;
+    height: 46px;
+    z-index: -1;
+    transition: 0.2s;
 }
-#mascaras{
-    margin-left:10px;
-}
-/*Margen entre las 2 imagenes para que tengan distancia entre ellas*/
 
-.to-container{
-    position:fixed;
-    bottom:1px;
-    right:1px;
-    width:56px;
-    height:46px;
-    z-index:-1;
-    transition:0.2s;
-}
-.container-boton{
-    width:0px;
-    height:0px;
-    background:rgb(57, 129, 254);
-    border-radius:50%;
+.container-boton {
+    width: 0px;
+    height: 0px;
+    background: rgb(57, 129, 254);
+    border-radius: 50%;
     cursor: pointer;
     transition: 0.2s;
-    top:50%;
-    left:50%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    z-index:-1;
+    z-index: -1;
 }
-.container-boton i{
+
+.container-boton i {
     position: absolute;
-    font-size:25px;
-    top:50%;
-    left:50%;
-    transform:translate(-50%, -50%) scale(0);
-    color:white;
+    font-size: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: white;
     transition: 0.2s;
 }
-.boton{
-    position:absolute;
-    font-size:17px;
-    top:48%;
-    left:50%;
+
+.boton {
+    position: absolute;
+    font-size: 17px;
+    top: 48%;
+    left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    color:white;
+    color: white;
     transition: all 0.2s;
 }
-.show{
-    z-index:10;
+
+.show {
+    z-index: 10;
 }
-.show .container-boton{
+
+.show .container-boton {
     animation: popup 0.3s ease-in-out;
-    width:66px;
-    height:66px;
-    z-index:11;
+    width: 66px;
+    height: 66px;
+    z-index: 11;
 }
-.show i{
+
+.show i {
     transform: translate(-50%, -50%) scale(1) rotate(-90deg);
 }
-@keyframes popup{
-    0%{width:0px;
-    height:0px;}
 
-    50%{width:80px;
-    height:80px;}
+@keyframes popup {
+    0% {
+        width: 0px;
+        height: 0px;
+    }
 
-    100%{width:66px;
-    height:66px;}
+    50% {
+        width: 80px;
+        height: 80px;
+    }
+
+    100% {
+        width: 66px;
+        height: 66px;
+    }
 }
+
 /*Configuraciones del boton y los contenedores. Propiedad .show manipulada por JavaScript*/
 
-section ul li{
-    margin-right:30px;
-    line-height:145%;
-    list-style:none;
-    font-family:Roboto;
-    font-size:150%;
-    font-weight:bolder;
+section ul li {
+    margin-right: 30px;
+    line-height: 145%;
+    list-style: none;
+    font-family: OpenSans;
+    font-size: 130%;
+    font-weight: bolder;
 }
+
 /*Decoracion de las listas*/
 
-li span{
-    color:rgb(57, 129, 254);
+li span {
+    color: rgb(57, 129, 254);
 }
+
 /*Decoracion de las listas cerradas entre <span>*/
 
-.li{
-    text-shadow:1px 0px 0px black;
-    color:white;
-    background-color:rgb(57, 129, 254);
-    padding:5px;
-    border-radius:10px 10px 10px 10px;
+.li {
+    text-shadow: 1px 0px 0px black;
+    color: white;
+    background-color: rgb(57, 129, 254);
+    padding: 5px;
+    border-radius: 10px 10px 10px 10px;
 }
+
 /*Decoracion de los conceptos en las listas*/
 
-p a{
-    text-decoration:none;
-    color:rgb(57, 129, 254);
+p a {
+    text-decoration: none;
+    color: rgb(57, 129, 254);
 }
+
 /*Decoracion de los hipervinculos dentro de los parrafos*/
 
-.dificultadp{
-    text-shadow:2px 0px 4px rgb(0, 0, 0);
-    color:rgb(255, 213, 0)
+.dificultadp {
+    text-shadow: 0px 0px 3px rgb(0, 0, 0);
+    color: rgb(255, 213, 0)
 }
+
 /*Decoracion de los nombres de las dificultades*/
 
-#time{
-    font-family:Blacklisted;
-    font-size:300%;
+#time {
+    font-family: Blacklisted;
+    font-size: 300%;
 }
+
 /*Decoracion de la frase "TIME TO MAKE THAT MONEY"*/
 
-footer{
-    padding:10px;
-    text-align:center;
-    background-color:var(--black-color);
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: var(--black-color);
 }
+
 /*Footer de la pagina*/
-footer h4{
-    text-align:center;
-    color:var(--white-color);
-    font-family:Lato;
-    font-size:150%;
+footer h4 {
+    text-align: center;
+    color: var(--white-color);
+    font-family: Lato;
+    font-size: 150%;
 }
 
-footer p{
-    font-family:Lato;
-    font-weight:900;
-    color:var(--white-color);
-    font-size:170%;
+footer p {
+    font-family: Lato;
+    font-weight: 900;
+    color: var(--white-color);
+    font-size: 170%;
 
 }
+
 /*<h4> del footer*/
 
-#yo{
-    color:rgb(57, 129, 254);
-    text-decoration:none;
+#yo {
+    color: rgb(57, 129, 254);
+    text-decoration: none;
 }
+
 /*Mi nombre*/
 
-#yo:hover{
-    color:red;
+#yo:hover {
+    color: red;
 }
+
 /*Hover de mi nombre*/
 
-#footer-titulo{
-    font-size:300%;
-    font-weight:100;
-    color:var(--white-color);
-    font-family:Headliner;
+#footer-titulo {
+    font-size: 300%;
+    font-weight: 100;
+    color: var(--white-color);
+    font-family: Headliner;
 }
+
 /*Titulo "PAYDAY 2 FAN PAGE" del footer*/
 
 
 
 
 /*Mejoras de CSS para la pagina Dificultades*/
-.introducciond{
-    text-align:center;
+.introducciond {
+    text-align: center;
 }
+
 /*Alineado al centro de todo sobre las dificultades*/
 
-.dificultadh3{
-    background-color:black;
-    color:rgb(255, 213, 0);
-    border:1px solid black;
+.dificultadh3 {
+    background-color: black;
+    color: rgb(255, 213, 0);
+    border: 1px solid black;
 }
+
 /*Color de los <h3> de las dificultades*/
 
-.onedownp{
-    color:red;
+.onedownp {
+    color: red;
 }
+
 /*Texto de la dificultad "Una Vida"*/
 
 
 
 /*Mejoras de CSS para la pagina DLC's y Mods*/
-.DLCS{
-    text-align:center;
+.DLCS {
+    text-align: center;
 }
-.MODS{
-    text-align:center;
+
+.MODS {
+    text-align: center;
 }
+
 /*Alineado al centro para el apartado de DLC's Y MODS*/
 
-.descargar{
-    color:rgb(74, 167, 74)
+.descargar {
+    color: rgb(74, 167, 74)
 }
+
 /*Color para el <a> para descargar el archivo (El mod en cuestion)*/
 
-#dark-button{
-    margin-top:10px;
-    font-family:Roboto;
-    position:fixed;
-    color:var(--white-color);
-    background-color:var(--black-color);
-    padding:10px;
-    border-radius:10px;
-    border: 1px solid black;
-    margin-left:0.25%;
-    transition:transform 0.3s;
+#dark-button {
+    margin-top: 10px;
+    font-family: Roboto;
+    position: fixed;
+    color: var(--white-color);
+    background-color: var(--black-color);
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 0.25%;
+    transition: transform 0.3s;
+    z-index: 100;
 }
 
-#dark-button:hover{
-    cursor:pointer;
-    transform:scale(1.05);
+#dark-button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
 }
+
 /*Estilos para el Dark-Button y su Hover*/
 
-#submenu{
-    text-align:center;
-    background-color:var(--black-color);
-    box-shadow:0px 5px 5px rgb(57, 129, 254), 0px -5px 5px rgb(57, 129, 254);;
+#submenu {
+    text-align: center;
+    background-color: var(--black-color);
+    box-shadow: 0px 5px 5px rgb(57, 129, 254), 0px -5px 5px rgb(57, 129, 254);
+    ;
 }
 
-#submenu ul li a{
-    text-shadow:black;
-    font-size:140%;
-    font-family:Gobold;
-    text-decoration:none;
-    color:var(--white-color);
-    transition:transform 0.2s;
+#submenu ul li a {
+    text-shadow: black;
+    font-size: 140%;
+    font-family: Gobold;
+    text-decoration: none;
+    color: var(--white-color);
+    transition: transform 0.2s;
 }
 
-#submenu ul li{
-    transition:transform 0.2s;
-    padding:30px;
-    display:inline-flex;
+#submenu ul li {
+    transition: transform 0.2s;
+    padding: 30px;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
 }
 
-#submenu ul li a:hover{
-    transform:scale(1.05);
-    text-shadow:1px 1px 0px rgba(57, 129, 254, 0.427);
-    color:rgb(57, 129, 254);
+#submenu ul li a:hover {
+    transform: scale(1.05);
+    text-shadow: 1px 1px 0px rgba(57, 129, 254, 0.427);
+    color: rgb(57, 129, 254);
 
 }
-#submenu ul li a::before{
-    content:url("dallasmask.png");
-    padding-right:5px;
+
+#submenu ul li a::before {
+    content: url("dallasmask.png");
+    padding-right: 5px;
 }
+
 /*Estilos para el sub-menu y su Hover*/
 
-.submenu-dificultades ul li a{
-    color:rgb(255, 213, 0) !important;
+.submenu-dificultades ul li a {
+    color: rgb(255, 213, 0) !important;
 }
-.submenu-dificultades ul li a::before{
-    content:url("dificultad.png") !important;
-    padding-right:5px !important;
+
+.submenu-dificultades ul li a::before {
+    content: url("dificultad.png") !important;
+    padding-right: 5px !important;
 }
+
 /*Estilos para el sub-menu de la pagina Dificultades*/
 
 
@@ -642,23 +769,24 @@ footer p{
 
 
 /*Mejoras de CSS para la pagina Armas*/
-.introduccion-armas{
-    text-align:center;
+.introduccion-armas {
+    text-align: center;
 }
+
 /*Alineado al centro para la introducción a las armas*/
 
-.armas-primarias{
-    text-align:center;
+.armas-primarias {
+    text-align: center;
 }
 
-.armas-secundarias{
-    text-align:center;
+.armas-secundarias {
+    text-align: center;
 }
 
-.armas-meele{
-    text-align:center;
+.armas-meele {
+    text-align: center;
 }
 
-.estadisticas{
-    text-align:center;
+.estadisticas {
+    text-align: center;
 }

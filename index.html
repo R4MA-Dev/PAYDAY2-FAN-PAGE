@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,291 +8,383 @@
     <title>PAYDAY2 FAN PAGE</title>
     <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/estilo.css">
-    <link rel="icon" href="2.ico" type="image/x-icon"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="2.ico" type="image/x-icon" />
 </head>
+
 <body id="body">
-<header class="indexh">
-    <button id="dark-button">Modo Oscuro</button>
-    <!--Boton Modo Oscuro (con JS)-->
+    <header class="indexh">
+        <button id="dark-button" data-aos="fade-right">Modo Oscuro</button>
+        <!--Boton Modo Oscuro (con JS)-->
 
-<h1 id="titulo"><span>PAYDAY<span class="dos">2</span>FAN PAGE</span></h1>
-</header>
-<!--Header-->
+        <h1 id="titulo"><span data-aos="fade-up" data-aos-duration="1200">PAYDAY<span class="dos">2</span>FAN PAGE</span></h1>
+    </header>
+    <!--Header-->
 
-<div>
-    <div class="to-container">
-        <div class="container-boton">
-            <i class="boton">&#10146;</i>
+    <div>
+        <div class="to-container">
+            <div class="container-boton">
+                <i class="boton">&#10146;</i>
+            </div>
         </div>
     </div>
-</div>
-<!--Container y boton para scorllear hacia arriba (con JS)-->
+    <!--Container y boton para scorllear hacia arriba (con JS)-->
 
-<nav>
-    <ul>
-        <li><a href="index.html" id="comosejuega">Como se juega</a></li>
-        <li><a href="dificultades.html">Dificultades</a></li>
-        <li><a href="dlcymods.html">DLC's y Mods</a></li>
-        <li><a href="armas.html">Armas</a></li>
+    <nav data-aos="fade-right">
+        <ul>
+            <li><a href="index.html" id="comosejuega">Como se juega</a></li>
+            <li><a href="dificultades.html">Dificultades</a></li>
+            <li><a href="dlcymods.html">DLC's y Mods</a></li>
+            <li><a href="armas.html">Armas</a></li>
         </ul>
-</nav>
-<!--Nav-->
+    </nav>
+    <!--Nav-->
+    <main>
+    <article>
+        <section>
+            <div class="introduccion" data-aos="fade-up">
+                <img loading="lazy" id="logopd2" width="900px" height="190px" src="imagenes/payday2logo.png"
+                    alt="payday 2 logo">
+                <div id="submenu">
+                    <ul>
+                        <li><a class="submenu-a" href="#menu-juego">Menú Principal</a></li>
+                        <li><a class="submenu-a" href="#crime-net">Crime.Net</a></li>
+                        <li><a class="submenu-a" href="#en-juego">En el juego</a></li>
+                    </ul>
+                </div>
+                <br> <br>
+                <!--Sub-Menu-->
 
-<article>
-    <section>
-            <div class="introduccion">
-            <img loading="lazy" id="logopd2" width="900px" height="190px" src="imagenes/payday2logo.png" alt="payday 2 logo">
-            <div id="submenu">
-                <ul>
-                    <li><a class="submenu-a" href="#menu-juego">Menú Principal</a></li>
-                    <li><a class="submenu-a" href="#crime-net">Crime.Net</a></li>
-                    <li><a class="submenu-a" href="#en-juego">En el juego</a></li>
-                </ul>
-            </div>
-            <br> <br>
-            <!--Sub-Menu-->
-
-            <h2><span>¿QUE ES PAYDAY<span class="dos">2</span>?</span></h2>
-            <p>PAYDAY2 es un juego cooperativo en primera persona, en el cual debemos lograr grandes atracos.<br>
-            Ya sea hacerlo en sigilo, sin que nadie nos vea, o causando un asalto y tener un enfrentamiento con la policia.</p>
-            <img loading="lazy" class="imagen" id="sigilo" width="500px" height="300px" src="imagenes/sigilo.jpg" alt="sigilo">
-            <img loading="lazy" class="imagen" id="asalto" width="500px" height="300px" src="imagenes/asalto.jpg" alt="asalto">
+                <h2><span>¿QUE ES PAYDAY<span class="dos">2</span>?</span></h2>
+                <p>PAYDAY2 es un juego cooperativo en primera persona, en el cual debemos lograr grandes atracos.<br>
+                    Ya sea hacerlo en sigilo, sin que nadie nos vea, o causando un asalto y tener un enfrentamiento con
+                    la policia.</p>
+                <img loading="lazy" class="imagen" id="sigilo" width="554px" height="368px" src="imagenes/sigilo.jpg"
+                    alt="sigilo">
+                <img loading="lazy" class="imagen" id="asalto" width="554px" height="368px" src="imagenes/asalto.jpg"
+                    alt="asalto">
             </div>
             <!--Parte introductoria-->
 
-    </section>
-    <br> <br>
-    <section>
-            <div id="menu-juego">
-            <h2><span>MENÚ PRINCIPAL</span></h2>
-            <br>
-            <img loading="lazy" class="imagen" width="700px" height="400px" src="imagenes/menu del juego/menu.jpg" alt="menu del juego">
-            <p>El juego nos recibirá con un menú principal lleno de contenido, pero solo nos<br>
-            centraremos en el Inventario y en Crime.Net</p>
-            <br>
+        </section>
+        <br> <br>
+        <section>
+            <div id="menu-juego" data-aos="fade-up">
+                <h2><span>MENÚ PRINCIPAL</span></h2>
+                <br>
+                <img loading="lazy" class="imagen" width="700px" height="400px" src="imagenes/menu del juego/menu.jpg"
+                    alt="menu del juego">
+                <p>El juego nos recibirá con un menú principal lleno de contenido, pero solo nos<br>
+                    centraremos en el Inventario y en Crime.Net</p>
+                <br>
                 <h3><span>Inventario</span></h3>
                 <br>
-                <img loading="lazy" class="imagen" width="700px" height="400px" src="imagenes/menu del juego/inventario.jpg" alt="inventario">
+                <img loading="lazy" class="imagen" width="700px" height="400px"
+                    src="imagenes/menu del juego/inventario.jpg" alt="inventario">
                 <p>Una vez que entremos al inventario veremos nuestras armas, habilidades, blindaje, nivel, etc.<br>
-                Siempre que querramos cambiar algo de nuestro personaje debemos entrar acá.</p>
+                    Siempre que querramos cambiar algo de nuestro personaje debemos entrar acá.</p>
                 <br>
                 <!--Inventario-->
-            <h3><span>Personajes y Máscaras</span></h3>
-            <br>
-            <img loading="lazy" id="personajes" class="imagen" width="600px" height="400px" src="imagenes/menu del juego/personajes.jpg" alt="personajes">
-            <img loading="lazy" id="mascaras" class="imagen" width="600px" height="400px" src="imagenes/menu del juego/mascaras.jpg" alt="mascaras">
-            <p class="no-afecta">Esto no afecta en nada a la jugabilidad y es totalmente cosmético</p><br>
-            <p><span>Personajes</span>: Cada uno tendrá su propia personalidad y diálogos, puedes elegir el que más te guste.<br>
-            En caso que algún jugador use el tuyo, se te asignará un personaje aleatorio o aquellos que tengas en tu lista de favoritos.</p>
-            <p><span>Mascaras</span>: Puedes elegir la máscara que más te guste, puedes comprarlas y personalizarlas a tu gusto.</p>
-            <br>
+                <h3><span>Personajes y Máscaras</span></h3>
+                <br>
+                <img loading="lazy" id="personajes" class="imagen" width="554px" height="368px"
+                    src="imagenes/menu del juego/personajes.jpg" alt="personajes">
+                <img loading="lazy" id="mascaras" class="imagen" width="554px" height="368px"
+                    src="imagenes/menu del juego/mascaras.jpg" alt="mascaras">
+                <p class="no-afecta">Esto no afecta en nada a la jugabilidad y es totalmente cosmético</p><br>
+                <p><span>Personajes</span>: Cada uno tendrá su propia personalidad y diálogos, puedes elegir el que más
+                    te guste.<br>
+                    En caso que algún jugador use el tuyo, se te asignará un personaje aleatorio o aquellos que tengas
+                    en tu lista de favoritos.</p>
+                <p><span>Mascaras</span>: Puedes elegir la máscara que más te guste, puedes comprarlas y personalizarlas
+                    a tu gusto.</p>
+                <br>
                 <!--Personajes y Mascaras-->
                 <h3><span>Blindajes</span></h3>
                 <br>
-                <img loading="lazy" class="imagen" width="700px" height="400px" src="imagenes/menu del juego/blindajes.jpg" alt="blindajes">
-                <p>Los <span>Blindajes</span> son una de las formas de defenderte en el juego, tienes desde el traje de dos piezas<br>
-                hasta el blindaje corporal experimental, el cual da la mayor defensa.<br>
-                Algo que debes saber es que dependiendo del blindaje que uses, este afectará a tu velocidad de movimiento, ocultación y defensa.</p>
-                <img loading="lazy" class="imagen ocultacion" src="imagenes/menu del juego/ocultacion.jpg" alt="ocultacion">
-                <p>La <span>ocultación</span> es lo que determina qué tan rapido y qué tan de lejos nos verán los enemigos en sigilo (Con un mínimo de 3 de ocultación).<br>
-                Mientras menos ocultación tengas en sigilo, mejor, además que hay habilidades que compensan tu baja ocultación (EJ: Esquivar balas,Críticos).</p>
+                <img loading="lazy" class="imagen" width="700px" height="400px"
+                    src="imagenes/menu del juego/blindajes.jpg" alt="blindajes">
+                <p>Los <span>Blindajes</span> son una de las formas de defenderte en el juego, tienes desde el traje de
+                    dos piezas<br>
+                    hasta el blindaje corporal experimental, el cual da la mayor defensa.<br>
+                    Algo que debes saber es que dependiendo del blindaje que uses, este afectará a tu velocidad de
+                    movimiento, ocultación y defensa.</p>
+                <img loading="lazy" class="imagen ocultacion" src="imagenes/menu del juego/ocultacion.jpg"
+                    alt="ocultacion">
+                <p>La <span>ocultación</span> es lo que determina qué tan rapido y qué tan de lejos nos verán los
+                    enemigos en sigilo (Con un mínimo de 3 de ocultación).<br>
+                    Mientras menos ocultación tengas en sigilo, mejor, además que hay habilidades que compensan tu baja
+                    ocultación (EJ: Esquivar balas,Críticos).</p>
                 <br>
                 <!--Blindajes y Ocultación-->
-            <h3><span>Equipamientos</span></h3>
-            <br>
-            <img loading="lazy" class="imagen" width="700px" height="400px" src="imagenes/menu del juego/equipamientos.jpg" alt="equipamientos">
-            <p>Los<span> Equipamientos Desplegables</span> los soltamos manteniendo la letra "G".<br>
-            Son aquellos que nos darán una mano durante la misión, hay equipamientos tanto para sigilo como asalto.</p>
-            <p>Los mas usados son:</p>
-            <ul>
-                <li><span class="li">BOTIQUÍN MÉDICO</span> Una vez que nos incapaciten 3 veces (4 con habilidades), si nos tiran otra vez, vamos en custodia.<br>
-                     El botiquín médico evitará esto y nos devolverá el número de veces que nos pueden incapacitar.</li>
-                     <br> <br>
-                <li><span class="li">BOLSA DE MUNICIÓN</span> Nos regenerará la munición de nuestras armas por completo.</li>
-                     <br> <br>
-                <li><span class="li">KIT DE PRIMEROS AUXILIOS</span> Nos regenera la salud, pero, no las veces que nos incapacitaron.<br>
-                Con habilidades puedes evitar que te incapaciten si tienes un kit cerca tuyo.</li>
-                     <br> <br>
-                <li><span class="li">ECM</span> Desactiva cámaras, objetos electrónicos y evita que los guardias hagan sonar la alarma.<br>
-                Es muy eficiente en caso que hayas cometido un error en sigilo.</li>
+                <h3><span>Equipamientos</span></h3>
+                <br>
+                <img loading="lazy" class="imagen" width="700px" height="400px"
+                    src="imagenes/menu del juego/equipamientos.jpg" alt="equipamientos">
+                <p>Los<span> Equipamientos Desplegables</span> los soltamos manteniendo la letra "G".<br>
+                    Son aquellos que nos darán una mano durante la misión, hay equipamientos tanto para sigilo como
+                    asalto.</p>
+                <p>Los mas usados son:</p>
+                <ul>
+                    <li><span class="li">BOTIQUÍN MÉDICO</span> Una vez que nos incapaciten 3 veces (4 con habilidades),
+                        si nos tiran otra vez, vamos en custodia.<br>
+                        El botiquín médico evitará esto y nos devolverá el número de veces que nos pueden incapacitar.
+                    </li>
                     <br> <br>
-                <li><span class="li">CAJA DE BOLSA DE CADÁVERES</span> Sirve para reabastecerse de bolsas de cadáveres.<br>
-                Las bolsas de cadáveres de usan para guardar cadáveres de guardias o civiles, con tal de no levantar sospechas.</li>
-            </ul>
-            <br>
-            <p>Hay muchos más desplegables, como las torretas automáticas, minas de sensor y la caja de armadura.</p>
-            <br>
+                    <li><span class="li">BOLSA DE MUNICIÓN</span> Nos regenerará la munición de nuestras armas por
+                        completo.</li>
+                    <br> <br>
+                    <li><span class="li">KIT DE PRIMEROS AUXILIOS</span> Nos regenera la salud, pero, no las veces que
+                        nos incapacitaron.<br>
+                        Con habilidades puedes evitar que te incapaciten si tienes un kit cerca tuyo.</li>
+                    <br> <br>
+                    <li><span class="li">ECM</span> Desactiva cámaras, objetos electrónicos y evita que los guardias
+                        hagan sonar la alarma.<br>
+                        Es muy eficiente en caso que hayas cometido un error en sigilo.</li>
+                    <br> <br>
+                    <li><span class="li">CAJA DE BOLSA DE CADÁVERES</span> Sirve para reabastecerse de bolsas de
+                        cadáveres.<br>
+                        Las bolsas de cadáveres de usan para guardar cadáveres de guardias o civiles, con tal de no
+                        levantar sospechas.</li>
+                </ul>
+                <br>
+                <p>Hay muchos más desplegables, como las torretas automáticas, minas de sensor y la caja de armadura.
+                </p>
+                <br>
                 <!--Equipamientos desplegables-->
-            <h3><span>Armas primarias</span></h3>
-            <br>
-            <img loading="lazy" class="imagen" width="700px" height="400px" src="imagenes/menu del juego/armas1.jpg" alt="armas primarias">
-            <p>En las <span>Armas Primarias</span> tendremos rifles de asaltos, snipers, escopetas, armas akimbo (una en cada mano) y especiales (explosivas, sierra, ballestas, etc)<br>
-            Todas pueden ser modificadas y compradas con el dinero que obtengas de los atracos que hagas.</p>
-            <br>
+                <h3><span>Armas primarias</span></h3>
+                <br>
+                <img loading="lazy" class="imagen" width="700px" height="400px" src="imagenes/menu del juego/armas1.jpg"
+                    alt="armas primarias">
+                <p>En las <span>Armas Primarias</span> tendremos rifles de asaltos, snipers, escopetas, armas akimbo
+                    (una en cada mano) y especiales (explosivas, sierra, ballestas, etc)<br>
+                    Todas pueden ser modificadas y compradas con el dinero que obtengas de los atracos que hagas.</p>
+                <br>
                 <!--Armas Primarias-->
                 <h3><span>Armas Secundarias</span></h3>
                 <br>
-                <img loading="lazy" class="imagen" width="700px" height="400px" src="imagenes/menu del juego/armas2.jpg" alt="armas secundarias">
-                <p>En las <span>Armas secundarias</span> tendremos pistolas/revolveres, subfusiles, escopetas y especiales (explosivas, sierra pero con habilidades y ballestas)<br>
-                Todas pueden ser modificadas y compradas con el dinero que obtengas de los atracos que hagas.</p>
+                <img loading="lazy" class="imagen" width="700px" height="400px" src="imagenes/menu del juego/armas2.jpg"
+                    alt="armas secundarias">
+                <p>En las <span>Armas secundarias</span> tendremos pistolas/revolveres, subfusiles, escopetas y
+                    especiales (explosivas, sierra pero con habilidades y ballestas)<br>
+                    Todas pueden ser modificadas y compradas con el dinero que obtengas de los atracos que hagas.</p>
                 <br>
                 <!--Armas Secundarias-->
-            <h3><span>Arrojadizas</span></h3>
-            <br>
-            <img loading="lazy" class="imagen" width="700px" height="400px" src="imagenes/menu del juego/arrojadizas.jpg" alt="Arrojadizas">
-            <p>Las <span>Arrojadizas</span> son armas que podremos usar un numero determinado de veces (menos armas filosas, son recuperables).<br>
-            Tienes desde aturdidoras, explosivas, molotov, filosas y muchas especiales que solo se usan con ciertos talentos.</p>
-            <br>
+                <h3><span>Arrojadizas</span></h3>
+                <br>
+                <img loading="lazy" class="imagen" width="700px" height="400px"
+                    src="imagenes/menu del juego/arrojadizas.jpg" alt="Arrojadizas">
+                <p>Las <span>Arrojadizas</span> son armas que podremos usar un numero determinado de veces (menos armas
+                    filosas, son recuperables).<br>
+                    Tienes desde aturdidoras, explosivas, molotov, filosas y muchas especiales que solo se usan con
+                    ciertos talentos.</p>
+                <br>
                 <!--Arrojadizas-->
                 <h3><span>Armas Melee</span></h3>
                 <br>
-                <img loading="lazy" class="imagen" width="700px" height="400px" src="imagenes/menu del juego/armasmele.jpg" alt="Armas Cuerpo a Cuerpo">
+                <img loading="lazy" class="imagen" width="700px" height="400px"
+                    src="imagenes/menu del juego/armasmele.jpg" alt="Armas Cuerpo a Cuerpo">
                 <p>Las <span>Armas Melee</span> las usamos cuando es necesario un enfrentamiento cuerpo a cuerpo.<br>
-                Muchas de estas no son eficientes sin habilidades, pero aquellas que electrocutan, envenenan o hasta queman son muy eficientes.</p>
+                    Muchas de estas no son eficientes sin habilidades, pero aquellas que electrocutan, envenenan o hasta
+                    queman son muy eficientes.</p>
                 <br>
                 <!--Armas melee-->
                 <h3><span>Habilidades</span></h3>
                 <br>
-                <img loading="lazy" class="imagen" width="700px" height="400px" src="imagenes/menu del juego/habilidades.gif" alt="Habilidades">
-                <p>Cada vez que subamos de nivel nos darán <span>1 punto de habilidad</span> (2 puntos extra cada vez que subamos 10 niveles).<br>
-                Las habilidades tienen su versión <span>Básica</span> y su versión <span>Ace</span> que vale el doble de puntos que la básica.<br>
-                Y tendremos que distribuir los puntos que ganemos en las siguientes ramas de habilidades:</p>
+                <img loading="lazy" class="imagen" width="700px" height="400px"
+                    src="imagenes/menu del juego/habilidades.gif" alt="Habilidades">
+                <p>Cada vez que subamos de nivel nos darán <span>1 punto de habilidad</span> (2 puntos extra cada vez
+                    que subamos 10 niveles).<br>
+                    Las habilidades tienen su versión <span>Básica</span> y su versión <span>Ace</span> que vale el
+                    doble de puntos que la básica.<br>
+                    Y tendremos que distribuir los puntos que ganemos en las siguientes ramas de habilidades:</p>
                 <ul>
-                    <li><span class="li">MENTE MAESTRA</span> Tenemos la subrama de <span>Médico</span> dedicado para dar soporte médico a tu equipo.<br>
-                    <span>Controlador</span> dedicado para usar los civiles a tu favor.<br>
-                    y por último <span>Tirador</span> dedicado para aprovechar el uso de fusiles semiautomáticos y snipers.</li>
+                    <li><span class="li">MENTE MAESTRA</span> Tenemos la subrama de <span>Médico</span> dedicado para
+                        dar soporte médico a tu equipo.<br>
+                        <span>Controlador</span> dedicado para usar los civiles a tu favor.<br>
+                        y por último <span>Tirador</span> dedicado para aprovechar el uso de fusiles semiautomáticos y
+                        snipers.</li>
                     <br> <br>
-                    <li><span class="li">MATÓN</span> Tenemos la subrama <span>Escopetero</span> para aprovechar el uso de las escopetas y la sierra.<br>
-                    <span>Tanque Humano</span> nos da las ventajas a la hora de usar blindaje pesado, y es la subrama que nos desbloqueará la armadura experimental.<br>
-                    Y por último <span>Experto en Municiones</span> que sirve para dar soporte de munición a nosotros y a nuestro equipo.</li>
+                    <li><span class="li">MATÓN</span> Tenemos la subrama <span>Escopetero</span> para aprovechar el uso
+                        de las escopetas y la sierra.<br>
+                        <span>Tanque Humano</span> nos da las ventajas a la hora de usar blindaje pesado, y es la
+                        subrama que nos desbloqueará la armadura experimental.<br>
+                        Y por último <span>Experto en Municiones</span> que sirve para dar soporte de munición a
+                        nosotros y a nuestro equipo.</li>
                     <br> <br>
-                    <li><span class="li">TÉCNICO</span> Tenemos la subrama de <span>Ingeniero</span> que mejora las torretas (y la posibilidad de llevar 2 equipamientos desplegables).<br>
-                    <span>Abridor</span> da mejoras para los taladros y las minas de sensor.<br>
-                    Y por último <span>Ametrallador</span> dedicado para aprovechar ametralladoras ligeras y rifles automáticos.</li>
+                    <li><span class="li">TÉCNICO</span> Tenemos la subrama de <span>Ingeniero</span> que mejora las
+                        torretas (y la posibilidad de llevar 2 equipamientos desplegables).<br>
+                        <span>Abridor</span> da mejoras para los taladros y las minas de sensor.<br>
+                        Y por último <span>Ametrallador</span> dedicado para aprovechar ametralladoras ligeras y rifles
+                        automáticos.</li>
                     <br> <br>
-                    <li><span class="li">FANTASMA</span> Tenemos la subrama <span>Shinobi</span> que está dedicada al sigilo y mejora de EMC y Bolsas de cádaveres.<br>
-                    <span>Evasor</span> dedicado a la esquiva de balas, rapidez y ocultación.<br>
-                    Y por último <span>Asesino Silencioso</span> dedicado al uso de silenciadores y golpes críticos.</li>
+                    <li><span class="li">FANTASMA</span> Tenemos la subrama <span>Shinobi</span> que está dedicada al
+                        sigilo y mejora de EMC y Bolsas de cádaveres.<br>
+                        <span>Evasor</span> dedicado a la esquiva de balas, rapidez y ocultación.<br>
+                        Y por último <span>Asesino Silencioso</span> dedicado al uso de silenciadores y golpes críticos.
+                    </li>
                     <br> <br>
-                    <li><span class="li">FUGITIVO</span> Tenemos la subrama <span>Pistolero</span> dedicada al uso de pistolas y armas akimbo.<br>
-                    <span>Revenant</span> nos da habilidades una vez fuimos incapacitados (Nueve Vidas en ACE nos dara una 4ta vida).<br>
-                    Y por último <span>Luchador</span> dedicado a la resistencia al daño y armas cuerpo a cuerpo.</li>
+                    <li><span class="li">FUGITIVO</span> Tenemos la subrama <span>Pistolero</span> dedicada al uso de
+                        pistolas y armas akimbo.<br>
+                        <span>Revenant</span> nos da habilidades una vez fuimos incapacitados (Nueve Vidas en ACE nos
+                        dara una 4ta vida).<br>
+                        Y por último <span>Luchador</span> dedicado a la resistencia al daño y armas cuerpo a cuerpo.
+                    </li>
                 </ul>
-                <p>Elige las habilidades según la forma que gustes jugar, una buena build puede hacer la diferencia en tus partidas.</p>
+                <p>Elige las habilidades según la forma que gustes jugar, una buena build puede hacer la diferencia en
+                    tus partidas.</p>
                 <br>
                 <!--Habilidades-->
-                    <h3><span>Talentos</span></h3>
-                    <br>
-                    <img loading="lazy" class="imagen" width="700px" height="400px" src="imagenes/menu del juego/talentos.jpg" alt="Talentos">
-                    <p>Los <span>Talentos</span> son una serie de cartas con ventajas, que se desbloquean con puntos de experiencia que recolectes de cada misión.<br>
+                <h3><span>Talentos</span></h3>
+                <br>
+                <img loading="lazy" class="imagen" width="700px" height="400px"
+                    src="imagenes/menu del juego/talentos.jpg" alt="Talentos">
+                <p>Los <span>Talentos</span> son una serie de cartas con ventajas, que se desbloquean con puntos de
+                    experiencia que recolectes de cada misión.<br>
                     Hay talentos de soporte, blindaje, esquiva, regeneración de salud, regeneración de blindaje,etc.</p>
-                    <p>¿No sabes cómo hacer una build estable?<br>
+                <p>¿No sabes cómo hacer una build estable?<br>
                     No te preocupes, puedes ver builds hechas por personas más expertas.<br>
                     Te dejo 2 canales hispanohablantes que hacen muy buenas builds,
-                    <a href="https://www.youtube.com/watch?v=vX7p5A3mMcA&list=PLf8eqQBi8a9Ec9Yghl8jH-oWDigP04yw9&ab_channel=MisterCarlos" target="_blank">Mister Carlos</a> y 
-                    <a href="https://www.youtube.com/watch?v=Xc-Jb-VZ1Pg&list=PLB7Acn_RSXKnKaOIOVmLqqYDKsRAv_jEo&ab_channel=Gorko7" target="_blank">Gorko7</a>.</p>
+                    <a href="https://www.youtube.com/watch?v=vX7p5A3mMcA&list=PLf8eqQBi8a9Ec9Yghl8jH-oWDigP04yw9&ab_channel=MisterCarlos"
+                        target="_blank">Mister Carlos</a> y
+                    <a href="https://www.youtube.com/watch?v=Xc-Jb-VZ1Pg&list=PLB7Acn_RSXKnKaOIOVmLqqYDKsRAv_jEo&ab_channel=Gorko7"
+                        target="_blank">Gorko7</a>.</p>
                 <br>
                 <!--Talentos-->
                 <h3><span>Mejora de i.a</span></h3>
                 <br>
-                <img loading="lazy" class="imagen" width="700px" height="400px" src="imagenes/menu del juego/bots.jpg" alt="Bots">
-                <p>En el apartado de la <span>I.A</span> puedes poner mejoras,armas y ventajas que te darán tus aliados bots durante la partida.<br>
-                Pon las mejoras segun la build que lleves, y cabe aclarar, cada jugador que entre a tu partida reemplazara al Inventario 3 hasta el 1</p>
+                <img loading="lazy" class="imagen" width="700px" height="400px" src="imagenes/menu del juego/bots.jpg"
+                    alt="Bots">
+                <p>En el apartado de la <span>I.A</span> puedes poner mejoras,armas y ventajas que te darán tus aliados
+                    bots durante la partida.<br>
+                    Pon las mejoras segun la build que lleves, y cabe aclarar, cada jugador que entre a tu partida
+                    reemplazara al Inventario 3 hasta el 1</p>
                 <br>
                 <!--Mejoras de IA-->
                 <h3><span>Infamia</span></h3>
                 <br>
-                <img loading="lazy" class="imagen" width="700px" height="400px" src="imagenes/menu del juego/infamia.jpg" alt="Infamia">
-                <p>La <span>Infamia</span> se consigue una vez llegues a nivel 100 y tengas 200 millones en tu cuenta de extranjero (esto en los primeros 5 niveles).<br>
-                Al subir de infamia recibirás recompensas como máscaras, colores, guantes, trajes, bonos permanentes de EXP, etc.</p>
+                <img loading="lazy" class="imagen" width="700px" height="400px"
+                    src="imagenes/menu del juego/infamia.jpg" alt="Infamia">
+                <p>La <span>Infamia</span> se consigue una vez llegues a nivel 100 y tengas 200 millones en tu cuenta de
+                    extranjero (esto en los primeros 5 niveles).<br>
+                    Al subir de infamia recibirás recompensas como máscaras, colores, guantes, trajes, bonos permanentes
+                    de EXP, etc.</p>
                 <br>
                 <!--Infamia-->
-                    </div>
-                    <!--Fin de la parte "MENU PRINCIPAL"-->
+            </div>
+            <!--Fin de la parte "MENU PRINCIPAL"-->
 
-                <div id="crime-net">
-                    <h2><span>CRIME.NET</span></h2>
-                    <br>
-                    <img loading="lazy" class="imagen" width="700px" height="400px" src="imagenes/menu del juego/crime-net.jpg" alt="Crime.Net">
-                    <p><span>Crime.Net</span> es el sitio donde entraremos para elegir las misiones que deseamos hacer.<br>
-                    Si vas a iniciar desde cero, recomiendo agarres la misión "Joyería" o "Banco H&T" en dificultad <span class="dificultadp">Normal</span> (sin calaveras) o <span class="dificultadp">Difícil</span> (una calavera).<br>
-                    Recomiendo mucho que entres a Crime.Net Offline y revises la seccion "La trama", tendras un tutorial y te darán misiones básicas para comenzar.</p>
-                    <br>
-                    <!--Crime.Net-->
+            <div id="crime-net" data-aos="fade-up">
+                <h2><span>CRIME.NET</span></h2>
+                <br>
+                <img loading="lazy" class="imagen" width="700px" height="400px"
+                    src="imagenes/menu del juego/crime-net.jpg" alt="Crime.Net">
+                <p><span>Crime.Net</span> es el sitio donde entraremos para elegir las misiones que deseamos hacer.<br>
+                    Si vas a iniciar desde cero, recomiendo agarres la misión "Joyería" o "Banco H&T" en dificultad
+                    <span class="dificultadp">Normal</span> (sin calaveras) o <span class="dificultadp">Difícil</span>
+                    (una calavera).<br>
+                    Recomiendo mucho que entres a Crime.Net Offline y revises la seccion "La trama", tendras un tutorial
+                    y te darán misiones básicas para comenzar.</p>
+                <br>
+                <!--Crime.Net-->
                 <h3><span>Intermediario</span></h3>
                 <br>
-                <img loading="lazy" class="imagen" width="700px" height="400px" src="imagenes/menu del juego/intermediario.jpg" alt="Intermediario">
-                <p>El <span>Intermediario</span> es la seccion donde tu puedes comprar las misiones con el dinero de tu cuenta del extranjero.<br>
-                Puedes comprar de los diferentes contactos, elegir la dificultad, opciones de la sala y si deseas activar/desactivar la I.A</p>
+                <img loading="lazy" class="imagen" width="700px" height="400px"
+                    src="imagenes/menu del juego/intermediario.jpg" alt="Intermediario">
+                <p>El <span>Intermediario</span> es la seccion donde tu puedes comprar las misiones con el dinero de tu
+                    cuenta del extranjero.<br>
+                    Puedes comprar de los diferentes contactos, elegir la dificultad, opciones de la sala y si deseas
+                    activar/desactivar la I.A</p>
                 <br>
                 <!--Intermediario-->
-                </div>
-                    <!--Fin de la parte "CRIME.NET"-->
-                <div id="en-juego">
-                    <h2><span>En el juego</span></h2>
-                    <br>
-                    <img loading="lazy" class="imagen" width="700px" height="400px" src="imagenes/menu del juego/espectador.jpg" alt="Modo espectador">
-                    <p>Una vez inicies la misión, estaras en modo <span>Espectador</span> y pasarás desapercibido por guardias y civiles.<br>
+            </div>
+            <!--Fin de la parte "CRIME.NET"-->
+            <div id="en-juego">
+                <h2><span>En el juego</span></h2>
+                <br>
+                <img loading="lazy" class="imagen" width="700px" height="400px"
+                    src="imagenes/menu del juego/espectador.jpg" alt="Modo espectador">
+                <p>Una vez inicies la misión, estaras en modo <span>Espectador</span> y pasarás desapercibido por
+                    guardias y civiles.<br>
                     No te acerques a los guardias o te detectaran de forma instantánea.</p>
                 <br>
-                <img loading="lazy" class="imagen" width="700px" height="400px" src="imagenes/menu del juego/tab.jpg" alt="Menu-Tab">
+                <img loading="lazy" class="imagen" width="700px" height="400px" src="imagenes/menu del juego/tab.jpg"
+                    alt="Menu-Tab">
                 <p>Cuando te pongas la máscara puedes utilizar tabulador para consultar información de la partida.<br>
-                Ver el objetivo actual, bolsa de cadáveres en mano, contestadores restantes, etc.</p>
+                    Ver el objetivo actual, bolsa de cadáveres en mano, contestadores restantes, etc.</p>
                 <br>
                 <!--En el juego-->
                 <h3><span>Sigilo</span></h3>
                 <br>
-                <img loading="lazy" class="imagen" width="700px" height="400px" src="imagenes/menu del juego/sigilo.jpg" alt="Sigilo">
+                <img loading="lazy" class="imagen" width="700px" height="400px" src="imagenes/menu del juego/sigilo.jpg"
+                    alt="Sigilo">
                 <p>Intenta pasar desapercibido de los guardias y civiles.<br>
-                Podrás darte cuenta que tienen la vista en tí cuando suba tu indicador de detección, si se llena te habrán detectado.</p>
+                    Podrás darte cuenta que tienen la vista en tí cuando suba tu indicador de detección, si se llena te
+                    habrán detectado.</p>
                 <br>
-                <img loading="lazy" class="imagen" width="700px" height="400px" src="imagenes/menu del juego/contestador.jpg" alt="Contestador">
+                <img loading="lazy" class="imagen" width="700px" height="400px"
+                    src="imagenes/menu del juego/contestador.jpg" alt="Contestador">
                 <p>En caso que un guardia te haya visto y debiste matarlo, contéstale al pager.<br>
-                Tienes un máximo de 4 veces para hacer esto, una vez pases ese límite la alarma sonara instantáneamente.</p>
+                    Tienes un máximo de 4 veces para hacer esto, una vez pases ese límite la alarma sonara
+                    instantáneamente.</p>
                 <br>
-                <img loading="lazy" class="imagen" width="700px" height="400px" src="imagenes/menu del juego/camara.jpg" alt="Camara">
-                <p>Ten cuidado con las cámaras, si te detectan, detectan algun cadáver o alguien alertado harán sonar la alarma de forma instantánea.<br>
-                En ciertas misiones puedes desactivar las camaras matando al guardia que las vigila</p>
+                <img loading="lazy" class="imagen" width="700px" height="400px" src="imagenes/menu del juego/camara.jpg"
+                    alt="Camara">
+                <p>Ten cuidado con las cámaras, si te detectan, detectan algun cadáver o alguien alertado harán sonar la
+                    alarma de forma instantánea.<br>
+                    En ciertas misiones puedes desactivar las camaras matando al guardia que las vigila</p>
                 <br>
                 <!--Sigilo-->
-                    <h3><span>Asalto</span></h3>
-                    <br>
-                    <img loading="lazy" class="imagen" width="700px" height="400px" src="imagenes/menu del juego/asalto.jpg" alt="Modo espectador">
-                    <p>Si has decidido ir por asalto, estate preparado para las oleadas de enemigos.<br>
-                    Estas oleadas se inician una vez salga una franja amarilla a tu derecha, una vez esta se va, la oleada terminará durante un tiempo.</p>
+                <h3><span>Asalto</span></h3>
+                <br>
+                <img loading="lazy" class="imagen" width="700px" height="400px" src="imagenes/menu del juego/asalto.jpg"
+                    alt="Modo espectador">
+                <p>Si has decidido ir por asalto, estate preparado para las oleadas de enemigos.<br>
+                    Estas oleadas se inician una vez salga una franja amarilla a tu derecha, una vez esta se va, la
+                    oleada terminará durante un tiempo.</p>
                 <br>
                 <!--Asalto-->
-                </div>
-                    <!--Fin de la parte "EN EL JUEGO"-->
-                <div id="tips-extra">
+            </div>
+            <!--Fin de la parte "EN EL JUEGO"-->
+            <div id="tips-extra">
                 <h2><span>Tips Extras</span></h2>
                 <br>
-                <p>- No mates civiles, átalos y llévalos a un lugar seguro. Éstos te serviran para que tus compañeros te saquen de custodia.</p>
-                <p>- No consumas los Botiquines Médicos solo para regenerar vida, úsalos una vez tu pantalla este en blanco y negro.</p>
+                <p>- No mates civiles, átalos y llévalos a un lugar seguro. Éstos te serviran para que tus compañeros te
+                    saquen de custodia.</p>
+                <p>- No consumas los Botiquines Médicos solo para regenerar vida, úsalos una vez tu pantalla este en
+                    blanco y negro.</p>
                 <p>- No entres a partidas públicas con dificultades muy altas.</p>
-                <p>- Recuerda que si te pierdes, usa el Tabulador como recordatorio y guíate con los íconos en pantalla</p>
+                <p>- Recuerda que si te pierdes, usa el Tabulador como recordatorio y guíate con los íconos en pantalla
+                </p>
                 <p>- Si tienes un amigo o conoces a alguien más experto, deja que te enseñe.</p>
                 <br> <br>
                 <p>Sabiendo todo esto, ya puedes iniciar tu carrera criminal con muy bien pie.<br>
-                <span>¡Diviértete!</span></p>
+                    <span>¡Diviértete!</span></p>
                 <br>
                 <!--Tips extras-->
                 <p id="time">TIME TO MAKE THAT MONEY</p>
-                </div>
-                    <!--Fin de la parte de "TIPS EXTRAS"-->
-    </section>
-</article>
-                            <!--Fin de todo el article-->
+            </div>
+            <!--Fin de la parte de "TIPS EXTRAS"-->
+        </section>
+    </article>
+    </main>
+    <!--Fin de todo el main-->
 
-<footer id="footer">
-    <h4>Esta pagina fue hecha por <span><a id="yo" href="https://www.facebook.com/ramiro.mercado.5/" target="_blank">RAMIRO MERCADO</a></span></h4>
-    <p id="footer-titulo">PAYDAY <span class="dos">2</span> FAN PAGE</p>
-</footer>
-<!--Footer-->
+    <footer id="footer">
+        <h4>Esta pagina fue hecha por <span><a id="yo" href="https://www.facebook.com/ramiro.mercado.5/"
+                    target="_blank">RAMIRO MERCADO</a></span></h4>
+        <p id="footer-titulo">PAYDAY <span class="dos">2</span> FAN PAGE</p>
+    </footer>
+    <!--Footer-->
 
-<script src="scripts/dark-mode.js" async></script>
-<script src="scripts/scroll-button.js" async></script>
-<!--Mis 2 scripts. Mi scroll-button y mi Dark-Mode-->
+    <script src="scripts/dark-mode.js"></script>
+    <script src="scripts/scroll-button.js"></script>
+    <!--Mis 2 scripts. Mi scroll-button y mi Dark-Mode-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 
 </body>
+
 </html>

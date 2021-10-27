@@ -8,10 +8,10 @@ function darkMode(){
 
     if(button.innerText == "Modo Oscuro"){
         html.style.setProperty("--black-color", "white");
-        html.style.setProperty("--white-color", "black");
+        html.style.setProperty("--white-color", "rgb(39, 38, 38)");
         button.innerText = "Modo Claro";
     }else{
-        html.style.setProperty("--black-color", "black");
+        html.style.setProperty("--black-color", "rgb(39, 38, 38)");
         html.style.setProperty("--white-color", "white");
         button.innerText = "Modo Oscuro";
     }

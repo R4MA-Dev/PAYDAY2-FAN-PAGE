@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,191 +8,254 @@
     <title>PAYDAY2 FAN PAGE</title>
     <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/estilo.css">
-    <link rel="icon" href="2.ico" type="image/x-icon"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="2.ico" type="image/x-icon" />
 </head>
+
 <body id="body">
     <header class="dificultadesh">
-        <button id="dark-button">Modo Oscuro</button>
+        <button id="dark-button" data-aos="fade-right">Modo Oscuro</button>
         <!--Boton Modo Oscuro (con JS)-->
-        <h1 id="titulo"><span>PAYDAY<span class="dos">2</span>FAN PAGE</span></h1>
-        </header>
-        <!--Header-->
+        <h1 id="titulo"><span data-aos="fade-right">PAYDAY<span class="dos">2</span>FAN PAGE</span></h1>
+    </header>
+    <!--Header-->
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Como se juega</a></li>
-                <li><a href="dificultades.html" id="dificultades">Dificultades</a></li>
-                <li><a href="dlcymods.html">DLC's y Mods</a></li>
-                <li><a href="armas.html">Armas</a></li>
-                </ul>
-        </nav>
-        <!--Nav-->
+    <nav data-aos="fade-right">
+        <ul>
+            <li><a href="index.html">Como se juega</a></li>
+            <li><a href="dificultades.html" id="dificultades">Dificultades</a></li>
+            <li><a href="dlcymods.html">DLC's y Mods</a></li>
+            <li><a href="armas.html">Armas</a></li>
+        </ul>
+    </nav>
+    <!--Nav-->
 
-        <div>
-            <div class="to-container">
-                <div class="container-boton">
-                    <i class="boton">&#10146;</i>
-                </div>
+    <div>
+        <div class="to-container">
+            <div class="container-boton">
+                <i class="boton">&#10146;</i>
             </div>
         </div>
-        <!--Container y boton para scrollear hacia arriba (con JS)-->
-
+    </div>
+    <!--Container y boton para scrollear hacia arriba (con JS)-->
+    <main>
         <article>
             <section>
                 <div class="introducciond">
-                <img loading="lazy" id="logopd2" width="900px" height="190px" src="imagenes/payday2logo.png" alt="payday 2 logo">
-                <div class="submenu-dificultades" id="submenu">
-                    <ul>
-                        <li><a href="#normal">Normal</a></li>
-                        <li><a href="#dificil">Dificil</a></li>
-                        <li><a href="#muy-dificil">Muy Dificil</a></li>
-                        <li><a href="#overkill">Overkill</a></li>
-                        <li><a href="#devastacion">Devastación</a></li>
-                        <li><a href="#aniquilacion">Aniquilación</a></li>
-                        <li><a href="#desolacion">Desolación</a></li>
-                    </ul>
-                </div>
-                <!--Sub-Menu-->
+                    <div data-aos="fade-up">
+                    <img loading="lazy" id="logopd2" width="900px" height="190px" src="imagenes/payday2logo.png"
+                        alt="payday 2 logo">
+                    <div class="submenu-dificultades" id="submenu">
+                        <ul>
+                            <li><a href="#normal">Normal</a></li>
+                            <li><a href="#dificil">Dificil</a></li>
+                            <li><a href="#muy-dificil">Muy Dificil</a></li>
+                            <li><a href="#overkill">Overkill</a></li>
+                            <li><a href="#devastacion">Devastación</a></li>
+                            <li><a href="#aniquilacion">Aniquilación</a></li>
+                            <li><a href="#desolacion">Desolación</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    <!--Sub-Menu-->
 
-                <br> <br>
-                <h2><span>LAS DIFICULTADES</span></h2>
-                <p>PAYDAY2 tiene <span>6 dificultades</span><br>
-                Cada dificultad introduce nuevos enemigos especiales, daño y vida de estos y la cantidad que debemos asegurar.</p>
-                <p>Partimos desde la dificultad <span class="dificultadp">Normal</span> hasta <span class="dificultadp">Desolación</span></p>
-                <br>
-                <!--Introducción a las dificultades-->
-                <h3><span id="normal" class="dificultadh3">NORMAL</span></h3>
-                <p>Esta dificultad es la mejor para tu primer partida.<br>
-                En las oleadas hay muchos menos enemigos y estos hacen muy poco daño.</p>
-                <p>El enemigo especial que nos presenta esta dificultad son <span>Los Escudos</span>.</p>
-                <img loading="lazy" class="imagen enemigo" width="700px" height="400px" src="imagenes/enemigos/escudo.jpg" alt="Escudo">
-                <p>Capaces de repeler nuestros disparos, nos lo presentan como el primer enemigo especial<br>
-                Las formas de matarlo seria agarrandole la espalda o con un arma capaz de atravesar su escudo</p>
-                <p><span>Snipers</span></p>
-                <img loading="lazy" class="imagen enemigo" width="700px" height="400px" src="imagenes/enemigos/sniper.jpg" alt="Sniper">
-                <p>Buscan una posicion elevada en el mapa y dispara aquellos que entren en su campo de visión<br>
-                Un disparo de un sniper atraviesa tu blindaje, osea, te hace daño a tu blindaje y a tu vida.</p>
-                <br>
-                <!--Dificultad Normal-->
-                <h3><span id="dificil" class="dificultadh3">DIFICIL</span></h3>
-                <img loading="lazy" class="imagen skull" src="imagenes/dificultad.png" alt="calavera dificil">
-                <p>Esta dificultad es ideal para aquellos que ya hicieron su primer mision.<br>
-                En las oleadas vienen mas enemigos y hacen un poco mas de daño.</p>
-                <p>El enemigo especial que nos introduce esta dificultad es <span>El Taser</span>.</p>
-                <img loading="lazy" class="imagen enemigo" width="700px" height="400px" src="imagenes/enemigos/taser.jpg" alt="Taser">
-                <p>Es capaz de aturdirnos con electricidad, logrando que nos quedemos paralizados y dejarnos al descubierto de los demas enemigos.<br>
-                Si te aturde por mucho tiempo, te incapacita pero no pierdes vidas.</p>
-                <br>
-                <!--Dificultad Dificil-->
-                <h3><span id="muy-dificil" class="dificultadh3">MUY DIFICIL</span></h3>
-                <img loading="lazy" class="imagen skull" src="imagenes/dificultad.png" alt="calavera dificil">
-                <img loading="lazy" class="imagen skull" src="imagenes/dificultad.png" alt="calavera dificil">
-                <p>Sube un poco más la dificultad comparando con Dificil, pero nos introduce a <span>4 enemigos especiales</span>.</p>
-                <p><span>El Bulldozer</span></p>
-                <img loading="lazy" class="imagen enemigo" width="700px" height="400px" src="imagenes/enemigos/bulldozer.jpg" alt="Bulldozer">
-                <p>Capaz de repeler gran cantidad de tiros, corre hacia los ladrones para matarlos a quemarropa.<br>
-                La unica forma de matarlo es destruyendo sus plaquetas blindadas de su cabeza o usar un arma muy potente para atravesar su blindaje.</p>
-                <br>
-                <p><span>Cloacker</span></p>
-                <img loading="lazy" class="imagen enemigo" width="700px" height="400px" src="imagenes/enemigos/cloacker.jpg" alt="Cloacker">
-                <p>Busca aquellos que esten distraido y es capaz de incapacitarte instantaneamente de una patada.<br>
-                Si escuchas un ruido de interferencia, presta atención, porque esta cerca. Si la interferencia se maximiza va por ti.</p>
-                <br>
-                <p><span>Capitan Winters</span></p>
-                <img loading="lazy" class="imagen enemigo" width="700px" height="400px" src="imagenes/enemigos/capitan.jpg" alt="Capitan Winters">
-                <p>Solo aparece en Crime.Net Online y en ciertas misiones.<br>
-                Escucharas un grito por megafono cuando este haga prescencia, vendra junto con otros 9 escudos.</p>
-                <p>El te esperara en alguna ubicacion del mapa, si no lo matas la oleada sera infinita y los enemigos tendra resistencia al daño.</p>
-                <br>
-                <p><span>Torreta Swat</span></p>
-                <img loading="lazy" class="imagen enemigo" width="700px" height="400px" src="imagenes/enemigos/torreta.jpg" alt="Torreta Swat">
-                <p>Sale en ciertas misiones, escucharas por megafono cuando viene en camino y una vez que llegue.<br>
-                La torreta tiene una gran cadencia y dispara a todo aquel que entre en su campo de visión.</p>
-                <p>Si el laser esta en amarillo quiere decir que esta recargando, usa ese tiempo a tu favor.<br>
-                No te acerques mucho o se defendera con gas lacrimogeno.</p>
-                <br>
-                <!--Dificultad Muy Dificil-->
-                <h3><span id="overkill" class="dificultadh3">OVERKILL</span></h3>
-                <img loading="lazy" class="imagen skull" src="imagenes/dificultad.png" alt="calavera dificil">
-                <img loading="lazy" class="imagen skull" src="imagenes/dificultad.png" alt="calavera dificil">
-                <img loading="lazy" class="imagen skull" src="imagenes/dificultad.png" alt="calavera dificil">
-                <p>La mejor dificultad para aquellos que ya conocen lo basico del juego.<br>
-                Los enemigos haran más daño y tendran más vida, ademas tendras a <span>El Medico</span></p>
-                <img loading="lazy" class="imagen enemigo" width="700px" height="400px" src="imagenes/enemigos/medic.jpg" alt="Medic">
-                <p>No hacen mucho daño, ni tienen mucha vida, pero son capaces de revivir aliados cercanos al instante.<br>
-                Presta mucho atencion si estan al lado de un Bulldozer o un Taser, pueden darles una segunda chance con tal de incapacitarte.</p>
-                <p>Los medicos no son capaces de revivir cloackers.</p>
-                <p><span>Bulldozer Negro</span></p>
-                <img loading="lazy" class="imagen enemigo" width="700px" height="400px" src="imagenes/enemigos/blackdozer.jpg" alt="BlackDozer">
-                <p>A diferencia del Bulldozer Verde, lleva una escopeta automatica.<br>
-                Dispara mucho más rapido y puede hacer mucho daño a media dintacia.</p>
-                <br>
-                <!--Dificultad Overkill-->
-                <h3><span id="devastacion" class="dificultadh3">DEVASTACIÓN</span></h3>
-                <img loading="lazy" class="imagen skull" src="imagenes/dificultad.png" alt="calavera dificil">
-                <img loading="lazy" class="imagen skull" src="imagenes/dificultad.png" alt="calavera dificil">
-                <img loading="lazy" class="imagen skull" src="imagenes/dificultad.png" alt="calavera dificil">
-                <img loading="lazy" class="imagen skull" src="imagenes/dificultad2.png" alt="calavera mayhem">
-                <p>La diferencia con overkill es minima, los enemigos hacen un poco más de daño y tienen más vida.<br>
-                La unica diferencia notable es que una vez te levanten al ser incapacitado, tendras mucha menos vida.</p>
-                <br>
-                <!--Dificultad Devastación-->
-                <h3><span id="aniquilacion" class="dificultadh3">ANIQUILACIÓN</span></h3>
-                <img loading="lazy" class="imagen skull" src="imagenes/dificultad.png" alt="calavera dificil">
-                <img loading="lazy" class="imagen skull" src="imagenes/dificultad.png" alt="calavera dificil">
-                <img loading="lazy" class="imagen skull" src="imagenes/dificultad.png" alt="calavera dificil">
-                <img loading="lazy" class="imagen skull" src="imagenes/dificultad2.png" alt="calavera mayhem">
-                <img loading="lazy" class="imagen skull" src="imagenes/dificultad3.png" alt="calavera deathwish">
-                <p>Los enemigos hacen mucho más daño y tienen muchas más vida.<br>
-                Ademas, esta dificultad nos presenta <span>2 bulldozers</span> que nos la complicaran mucho.</p>
-                <p><span>Skulldozer</span></p>
-                <img loading="lazy" class="imagen enemigo" width="700px" height="400px" src="imagenes/enemigos/skulldozer.jpg" alt="Skulldozer">
-                <p>Armado con una ametralladora pesada, es capaz de hacer grandes cantidades de daño sin importar la distancia.<br>
-                <span>Dato curioso:</span> Este bulldozer sale rara vez en la dificultad Devastación.</p>
-                <p><span>Minigun Dozer</span></p>
-                <img loading="lazy" class="imagen enemigo" width="700px" height="400px" src="imagenes/enemigos/dozermini.jpg" alt="Minigun Dozer">
-                <p>Armado con una minigun, un arma con una cadencia bestial.<br>
-                Este bulldozer es capaz de hacer grandes cantidades de daño sin importar la distancia, ademas, es el bulldozer con mas vida.</p>
-                <br>
-                <!--Dificultad Aniquilación-->
-                <h3><span id="desolacion" class="dificultadh3">DESOLACIÓN</span></h3>
-                <img loading="lazy" class="imagen skull" src="imagenes/dificultad.png" alt="calavera dificil">
-                <img loading="lazy" class="imagen skull" src="imagenes/dificultad.png" alt="calavera dificil">
-                <img loading="lazy" class="imagen skull" src="imagenes/dificultad.png" alt="calavera dificil">
-                <img loading="lazy" class="imagen skull" src="imagenes/dificultad2.png" alt="calavera mayhem">
-                <img loading="lazy" class="imagen skull" src="imagenes/dificultad3.png" alt="calavera deathwish">
-                <img loading="lazy" class="imagen skull" src="imagenes/dificultad4.png" alt="calavera deathsentence">
-                <br> <br>
-                <img loading="lazy" class="imagen enemigo" width="700px" height="400px" src="imagenes/enemigos/fuerzazeal.jpg" alt="Fuerza Zeal">
-                <p>Esta dificultad te presenta a <span>La Fuerza Zeal</span>.<br>
-                La unidad mas dificil a la que te enfrentaras.</p>
-                <p>Hacen una gran cantidad de daño, mucha más vida, oleadas mas largas y se anula la reducción de daño por distancia.<br>
-                Y conoceras al ultimo enemigo especial, el <span>Medic Dozer</span>.</p>
-                <img loading="lazy" class="imagen enemigo" width="700px" height="400px" src="imagenes/enemigos/medicdozer.jpg" alt="Medic Dozer">
-                <p>El mismo rol que el medico, revive a aquellos que esten cerca.<br>
-                Hace poco daño comparado a los otros bulldozers, pon tu atención en el antes que cualquier otro enemigo.</p>
-                <br>
-                <!--Dificultad Desolación-->
-                <h3><span class="dificultadh3">UNA VIDA</span></h3>
-                <br>
-                <img loading="lazy" class="imagen" width="700px" height="400px" src="imagenes/onedownmask.jpg" alt="One Down Mask">
-                <p><span class="onedownp">¿Te vez capaz de pasar todas las misiones en una vida y en la maxima dificultad?</span><br>
-                Esta mascara demostrara lo loco que estas.</p>
-                <!--Una Vida-->
+                    <br> <br>
+                    <h2><span>LAS DIFICULTADES</span></h2>
+                    <p>PAYDAY2 tiene <span>6 dificultades</span><br>
+                        Cada dificultad introduce nuevos enemigos especiales, daño y vida de estos y la cantidad que
+                        debemos asegurar.</p>
+                    <p>Partimos desde la dificultad <span class="dificultadp">Normal</span> hasta <span
+                            class="dificultadp">Desolación</span></p>
+                    <br>
+                    <!--Introducción a las dificultades-->
+                    <div data-aos="fade-up">
+                    <h3><span id="normal" class="dificultadh3">NORMAL</span></h3>
+                    <p>Esta dificultad es la mejor para tu primer partida.<br>
+                        En las oleadas hay muchos menos enemigos y estos hacen muy poco daño.</p>
+                    <p>El enemigo especial que nos presenta esta dificultad son <span>Los Escudos</span>.</p>
+                    <img loading="lazy" class="imagen enemigo" width="700px" height="400px"
+                        src="imagenes/enemigos/escudo.jpg" alt="Escudo">
+                    <p>Capaces de repeler nuestros disparos, nos lo presentan como el primer enemigo especial<br>
+                        Las formas de matarlo seria agarrandole la espalda o con un arma capaz de atravesar su escudo
+                    </p>
+                    <p><span>Snipers</span></p>
+                    <img loading="lazy" class="imagen enemigo" width="700px" height="400px"
+                        src="imagenes/enemigos/sniper.jpg" alt="Sniper">
+                    <p>Buscan una posicion elevada en el mapa y dispara aquellos que entren en su campo de visión<br>
+                        Un disparo de un sniper atraviesa tu blindaje, osea, te hace daño a tu blindaje y a tu vida.</p>
+                    </div>
+                    <br>
+                    <!--Dificultad Normal-->
+                    <div data-aos="fade-up">
+                    <h3><span id="dificil" class="dificultadh3">DIFICIL</span></h3>
+                    <img loading="lazy" class="imagen skull" src="imagenes/dificultad.png" alt="calavera dificil">
+                    <p>Esta dificultad es ideal para aquellos que ya hicieron su primer mision.<br>
+                        En las oleadas vienen mas enemigos y hacen un poco mas de daño.</p>
+                    <p>El enemigo especial que nos introduce esta dificultad es <span>El Taser</span>.</p>
+                    <img loading="lazy" class="imagen enemigo" width="700px" height="400px"
+                        src="imagenes/enemigos/taser.jpg" alt="Taser">
+                    <p>Es capaz de aturdirnos con electricidad, logrando que nos quedemos paralizados y dejarnos al
+                        descubierto de los demas enemigos.<br>
+                        Si te aturde por mucho tiempo, te incapacita pero no pierdes vidas.</p>
+                    </div>
+                    <br>
+                    <!--Dificultad Dificil-->
+                    <div data-aos="fade-up">
+                    <h3><span id="muy-dificil" class="dificultadh3">MUY DIFICIL</span></h3>
+                    <img loading="lazy" class="imagen skull" src="imagenes/dificultad.png" alt="calavera dificil">
+                    <img loading="lazy" class="imagen skull" src="imagenes/dificultad.png" alt="calavera dificil">
+                    <p>Sube un poco más la dificultad comparando con Dificil, pero nos introduce a <span>4 enemigos
+                            especiales</span>.</p>
+                    <p><span>El Bulldozer</span></p>
+                    <img loading="lazy" class="imagen enemigo" width="700px" height="400px"
+                        src="imagenes/enemigos/bulldozer.jpg" alt="Bulldozer">
+                    <p>Capaz de repeler gran cantidad de tiros, corre hacia los ladrones para matarlos a quemarropa.<br>
+                        La unica forma de matarlo es destruyendo sus plaquetas blindadas de su cabeza o usar un arma muy
+                        potente para atravesar su blindaje.</p>
+                    <br>
+                    <p><span>Cloacker</span></p>
+                    <img loading="lazy" class="imagen enemigo" width="700px" height="400px"
+                        src="imagenes/enemigos/cloacker.jpg" alt="Cloacker">
+                    <p>Busca aquellos que esten distraido y es capaz de incapacitarte instantaneamente de una
+                        patada.<br>
+                        Si escuchas un ruido de interferencia, presta atención, porque esta cerca. Si la interferencia
+                        se maximiza va por ti.</p>
+                    <br>
+                    <p><span>Capitan Winters</span></p>
+                    <img loading="lazy" class="imagen enemigo" width="700px" height="400px"
+                        src="imagenes/enemigos/capitan.jpg" alt="Capitan Winters">
+                    <p>Solo aparece en Crime.Net Online y en ciertas misiones.<br>
+                        Escucharas un grito por megafono cuando este haga prescencia, vendra junto con otros 9 escudos.
+                    </p>
+                    <p>El te esperara en alguna ubicacion del mapa, si no lo matas la oleada sera infinita y los
+                        enemigos tendra resistencia al daño.</p>
+                    <br>
+                    <p><span>Torreta Swat</span></p>
+                    <img loading="lazy" class="imagen enemigo" width="700px" height="400px"
+                        src="imagenes/enemigos/torreta.jpg" alt="Torreta Swat">
+                    <p>Sale en ciertas misiones, escucharas por megafono cuando viene en camino y una vez que
+                        llegue.<br>
+                        La torreta tiene una gran cadencia y dispara a todo aquel que entre en su campo de visión.</p>
+                    <p>Si el laser esta en amarillo quiere decir que esta recargando, usa ese tiempo a tu favor.<br>
+                        No te acerques mucho o se defendera con gas lacrimogeno.</p>
+                    </div>
+                    <br>
+                    <!--Dificultad Muy Dificil-->
+                    <div data-aos="fade-up">
+                    <h3><span id="overkill" class="dificultadh3">OVERKILL</span></h3>
+                    <img loading="lazy" class="imagen skull" src="imagenes/dificultad.png" alt="calavera dificil">
+                    <img loading="lazy" class="imagen skull" src="imagenes/dificultad.png" alt="calavera dificil">
+                    <img loading="lazy" class="imagen skull" src="imagenes/dificultad.png" alt="calavera dificil">
+                    <p>La mejor dificultad para aquellos que ya conocen lo basico del juego.<br>
+                        Los enemigos haran más daño y tendran más vida, ademas tendras a <span>El Medico</span></p>
+                    <img loading="lazy" class="imagen enemigo" width="700px" height="400px"
+                        src="imagenes/enemigos/medic.jpg" alt="Medic">
+                    <p>No hacen mucho daño, ni tienen mucha vida, pero son capaces de revivir aliados cercanos al
+                        instante.<br>
+                        Presta mucho atencion si estan al lado de un Bulldozer o un Taser, pueden darles una segunda
+                        chance con tal de incapacitarte.</p>
+                    <p>Los medicos no son capaces de revivir cloackers.</p>
+                    <p><span>Bulldozer Negro</span></p>
+                    <img loading="lazy" class="imagen enemigo" width="700px" height="400px"
+                        src="imagenes/enemigos/blackdozer.jpg" alt="BlackDozer">
+                    <p>A diferencia del Bulldozer Verde, lleva una escopeta automatica.<br>
+                        Dispara mucho más rapido y puede hacer mucho daño a media dintacia.</p>
+                    </div>
+                    <br>
+                    <!--Dificultad Overkill-->
+                    <div data-aos="fade-up">
+                    <h3><span id="devastacion" class="dificultadh3">DEVASTACIÓN</span></h3>
+                    <img loading="lazy" class="imagen skull" src="imagenes/dificultad.png" alt="calavera dificil">
+                    <img loading="lazy" class="imagen skull" src="imagenes/dificultad.png" alt="calavera dificil">
+                    <img loading="lazy" class="imagen skull" src="imagenes/dificultad.png" alt="calavera dificil">
+                    <img loading="lazy" class="imagen skull" src="imagenes/dificultad2.png" alt="calavera mayhem">
+                    <p>La diferencia con overkill es minima, los enemigos hacen un poco más de daño y tienen más
+                        vida.<br>
+                        La unica diferencia notable es que una vez te levanten al ser incapacitado, tendras mucha menos
+                        vida.</p>
+                    </div>
+                    <br>
+                    <!--Dificultad Devastación-->
+                    <div data-aos="fade-up">
+                    <h3><span id="aniquilacion" class="dificultadh3">ANIQUILACIÓN</span></h3>
+                    <img loading="lazy" class="imagen skull" src="imagenes/dificultad.png" alt="calavera dificil">
+                    <img loading="lazy" class="imagen skull" src="imagenes/dificultad.png" alt="calavera dificil">
+                    <img loading="lazy" class="imagen skull" src="imagenes/dificultad.png" alt="calavera dificil">
+                    <img loading="lazy" class="imagen skull" src="imagenes/dificultad2.png" alt="calavera mayhem">
+                    <img loading="lazy" class="imagen skull" src="imagenes/dificultad3.png" alt="calavera deathwish">
+                    <p>Los enemigos hacen mucho más daño y tienen muchas más vida.<br>
+                        Ademas, esta dificultad nos presenta <span>2 bulldozers</span> que nos la complicaran mucho.</p>
+                    <p><span>Skulldozer</span></p>
+                    <img loading="lazy" class="imagen enemigo" width="700px" height="400px"
+                        src="imagenes/enemigos/skulldozer.jpg" alt="Skulldozer">
+                    <p>Armado con una ametralladora pesada, es capaz de hacer grandes cantidades de daño sin importar la
+                        distancia.<br>
+                        <span>Dato curioso:</span> Este bulldozer sale rara vez en la dificultad Devastación.</p>
+                    <p><span>Minigun Dozer</span></p>
+                    <img loading="lazy" class="imagen enemigo" width="700px" height="400px"
+                        src="imagenes/enemigos/dozermini.jpg" alt="Minigun Dozer">
+                    <p>Armado con una minigun, un arma con una cadencia bestial.<br>
+                        Este bulldozer es capaz de hacer grandes cantidades de daño sin importar la distancia, ademas,
+                        es el bulldozer con mas vida.</p>
+                    </div>
+                    <br>
+                    <!--Dificultad Aniquilación-->
+                    <div data-aos="fade-up">
+                    <h3><span id="desolacion" class="dificultadh3">DESOLACIÓN</span></h3>
+                    <img loading="lazy" class="imagen skull" src="imagenes/dificultad.png" alt="calavera dificil">
+                    <img loading="lazy" class="imagen skull" src="imagenes/dificultad.png" alt="calavera dificil">
+                    <img loading="lazy" class="imagen skull" src="imagenes/dificultad.png" alt="calavera dificil">
+                    <img loading="lazy" class="imagen skull" src="imagenes/dificultad2.png" alt="calavera mayhem">
+                    <img loading="lazy" class="imagen skull" src="imagenes/dificultad3.png" alt="calavera deathwish">
+                    <img loading="lazy" class="imagen skull" src="imagenes/dificultad4.png"
+                        alt="calavera deathsentence">
+                    <br> <br>
+                    <img loading="lazy" class="imagen enemigo" width="700px" height="400px"
+                        src="imagenes/enemigos/fuerzazeal.jpg" alt="Fuerza Zeal">
+                    <p>Esta dificultad te presenta a <span>La Fuerza Zeal</span>.<br>
+                        La unidad mas dificil a la que te enfrentaras.</p>
+                    <p>Hacen una gran cantidad de daño, mucha más vida, oleadas mas largas y se anula la reducción de
+                        daño por distancia.<br>
+                        Y conoceras al ultimo enemigo especial, el <span>Medic Dozer</span>.</p>
+                    <img loading="lazy" class="imagen enemigo" width="700px" height="400px"
+                        src="imagenes/enemigos/medicdozer.jpg" alt="Medic Dozer">
+                    <p>El mismo rol que el medico, revive a aquellos que esten cerca.<br>
+                        Hace poco daño comparado a los otros bulldozers, pon tu atención en el antes que cualquier otro
+                        enemigo.</p>
+                    </div>
+                    <br>
+                    <!--Dificultad Desolación-->
+                    <div data-aos="fade-up">
+                    <h3><span class="dificultadh3">UNA VIDA</span></h3>
+                    <br>
+                    <img loading="lazy" class="imagen" width="700px" height="400px" src="imagenes/onedownmask.jpg"
+                        alt="One Down Mask">
+                    <p><span class="onedownp">¿Te vez capaz de pasar todas las misiones en una vida y en la maxima
+                            dificultad?</span><br>
+                        Esta mascara demostrara lo loco que estas.</p>
+                    </div>
+                    <!--Una Vida-->
                 </div>
             </section>
         </article>
-                        <!--Fin del Article-->
+    </main>
+    <!--Fin del Main-->
 
-        <footer id="footer">
-            <h4>Esta pagina fue hecha por <span><a id="yo" href="https://www.facebook.com/ramiro.mercado.5/" target="_blank">RAMIRO MERCADO</a></span></h4>
-            <p id="footer-titulo">PAYDAY <span class="dos">2</span> FAN PAGE</p>
-        </footer>
-        <!--Footer-->
+    <footer id="footer">
+        <h4>Esta pagina fue hecha por <span><a id="yo" href="https://www.facebook.com/ramiro.mercado.5/"
+                    target="_blank">RAMIRO MERCADO</a></span></h4>
+        <p id="footer-titulo">PAYDAY <span class="dos">2</span> FAN PAGE</p>
+    </footer>
+    <!--Footer-->
 
-        <script src="scripts/dark-mode.js" async></script>
-        <script src="scripts/scroll-button.js" async></script>
-        <!--Mis 2 scripts. Mi Scroll-Button y mi Dark-Mode-->
+    <script src="scripts/dark-mode.js"></script>
+    <script src="scripts/scroll-button.js"></script>
+    <!--Mis 2 scripts. Mi Scroll-Button y mi Dark-Mode-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 
 </body>
+
 </html>
