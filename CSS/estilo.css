@@ -119,9 +119,9 @@
         padding-left: 0px !important;
     }
 
-    section p {
+    section p:not(p#time){
         line-height: 130%;
-        font-size: 80% !important;
+        font-size: 100% !important;
     }
 
     section ul li {
