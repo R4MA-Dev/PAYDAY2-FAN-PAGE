@@ -9,7 +9,7 @@ window.onscroll = function click(){
 
 function animarScroll(){
     let currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
-    if (currentScroll > 0){
+    if (currentScroll > 50){
         window.requestAnimationFrame(animarScroll);
         window.scrollBy(0, -(currentScroll/16));
         
