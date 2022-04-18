@@ -450,29 +450,10 @@ p span {
 
 /*Diseño de los parrafos encerrados por la etiqueta <span>*/
 
-#menu-juego {
+section{
     text-align: center;
 }
-
-/*Centrar todo el apartado "Menu Principal"*/
-
-#crime-net {
-    text-align: center;
-}
-
-/*Centrar todo el apartado "Crime.Net"*/
-
-#en-juego {
-    text-align: center;
-}
-
-/*Centrar todo el apartado "En el juego"*/
-
-#tips-extra {
-    text-align: center;
-}
-
-/*Centrar todo el apartado "Tips Extra"*/
+/*Centrar todos los sections/
 
 .no-afecta {
     color: rgb(214, 18, 18);
