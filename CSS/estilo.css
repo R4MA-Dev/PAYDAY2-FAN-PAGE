@@ -64,10 +64,6 @@
         font-size: 170%;
     }
 
-    .container-boton {
-        display: none;
-    }
-
     section .skull {
         width: 80px;
         height: 100px;
@@ -101,6 +97,15 @@
     header h1 {
         transition: none !important;
         font-size: 65%;
+    }
+
+    .to-container{
+        left: 92%;
+    }
+
+    .container-boton {
+       width: 40px !important;
+       height: 40px !important;
     }
 
     nav ul li a{
